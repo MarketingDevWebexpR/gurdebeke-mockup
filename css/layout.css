@@ -46,7 +46,7 @@
 .topbar__right {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
 }
 
 .topbar__links {
@@ -63,6 +63,50 @@
 
 .topbar__nav-link:hover {
   color: var(--color-primary);
+}
+
+/* Topbar Buttons */
+.topbar__buttons {
+  display: flex;
+}
+
+.topbar__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  font-size: 0.75rem;
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+}
+
+.topbar__btn--client {
+  color: var(--color-text);
+  border: 1px solid var(--color-gray-300);
+  border-right: none;
+  background-color: transparent;
+}
+
+.topbar__btn--client:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.topbar__btn--client svg {
+  color: var(--color-primary);
+}
+
+.topbar__btn--cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+}
+
+.topbar__btn--cta:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
 }
 
 /* -------------------------------------------------------------------------
