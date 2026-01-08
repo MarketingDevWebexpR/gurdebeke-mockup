@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initMobileMenu();
   initDropdowns();
+  initVariantSelector();
 });
 
 /**
@@ -341,3 +342,31 @@ function initResizeHandler() {
 
 // Initialize resize handler
 initResizeHandler();
+
+/**
+ * Variant Selector Toggle
+ */
+function initVariantSelector() {
+  const selector = document.getElementById('variant-selector');
+  const toggle = document.getElementById('variant-toggle');
+
+  if (!selector || !toggle) return;
+
+  toggle.addEventListener('click', () => {
+    selector.classList.toggle('is-open');
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.variant-selector')) {
+      selector.classList.remove('is-open');
+    }
+  });
+
+  // Close on escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      selector.classList.remove('is-open');
+    }
+  });
+}

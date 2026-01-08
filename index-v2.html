@@ -212,100 +212,46 @@
     </div>
   </header>
 
-  <!-- ========== HERO SLIDER ========== -->
-  <section class="hero">
-    <div class="swiper hero__slider" id="hero-slider">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide hero__slide">
-          <div class="hero__image">
-            <img src="assets/slides/slide-verre.jpg" alt="Recyclage du verre">
-            <div class="hero__overlay"></div>
-          </div>
-          <div class="hero__content">
-            <span class="hero__subtitle">Déchets et tri sélectif</span>
-            <h1 class="hero__title">Gurdebeke, le recyclage pour les particuliers, professionnels et collectivités</h1>
-            <a href="#about" class="btn btn--primary btn--lg">
-              A propos de nous
-              <span class="btn__arrow">→</span>
-            </a>
-          </div>
+  <!-- ========== HERO SPLIT (V2) ========== -->
+  <section class="hero-split">
+    <div class="hero-split__container">
+      <div class="hero-split__content">
+        <span class="hero-split__badge">Depuis 1972</span>
+        <h1 class="hero-split__title">Déchets et tri sélectif</h1>
+        <p class="hero-split__subtitle">Gurdebeke, le recyclage pour les particuliers, professionnels et collectivités</p>
+        <p class="hero-split__desc">
+          Spécialiste de la collecte, du tri et de la valorisation des déchets depuis plus de 50 ans dans les Hauts-de-France.
+        </p>
+        <div class="hero-split__actions">
+          <a href="#about" class="btn btn--primary">
+            Découvrir nos services
+            <span class="btn__arrow">→</span>
+          </a>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide hero__slide">
-          <div class="hero__image">
-            <img src="assets/slides/slide-saint-just.jpg" alt="Centre Saint-Just">
-            <div class="hero__overlay"></div>
+        <div class="hero-split__stats">
+          <div class="hero-split__stat">
+            <span class="hero-split__stat-value">10</span>
+            <span class="hero-split__stat-label">Sites en France</span>
           </div>
-          <div class="hero__content">
-            <span class="hero__subtitle">Déchets et tri sélectif</span>
-            <h1 class="hero__title">Gurdebeke, le recyclage pour les particuliers, professionnels et collectivités</h1>
-            <a href="#" class="btn btn--primary btn--lg">
-              Nos équipements
-              <span class="btn__arrow">→</span>
-            </a>
+          <div class="hero-split__stat">
+            <span class="hero-split__stat-value">170</span>
+            <span class="hero-split__stat-label">Collaborateurs</span>
           </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide hero__slide">
-          <div class="hero__image">
-            <img src="assets/slides/slide-fretoy.jpg" alt="Site de Fretoy">
-            <div class="hero__overlay"></div>
-          </div>
-          <div class="hero__content">
-            <span class="hero__subtitle">Déchets et tri sélectif</span>
-            <h1 class="hero__title">Gurdebeke, le recyclage pour les particuliers, les professionnels et les collectivités</h1>
-            <a href="#" class="btn btn--primary btn--lg">
-              Nos équipements
-              <span class="btn__arrow">→</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide hero__slide">
-          <div class="hero__image">
-            <img src="assets/slides/slide-biodechets.jpg" alt="Traitement des biodéchets">
-            <div class="hero__overlay"></div>
-          </div>
-          <div class="hero__content">
-            <span class="hero__subtitle">Traitement des biodéchets</span>
-            <h1 class="hero__title">Centre de déconditionnement & d'hygiénisation</h1>
-            <a href="#deconditioning" class="btn btn--primary btn--lg">
-              En savoir plus
-              <span class="btn__arrow">→</span>
-            </a>
+          <div class="hero-split__stat">
+            <span class="hero-split__stat-value">50+</span>
+            <span class="hero-split__stat-label">Années d'expertise</span>
           </div>
         </div>
       </div>
-
-      <!-- Custom Navigation -->
-      <div class="hero__nav">
-        <button class="hero__nav-btn hero__nav-btn--prev" aria-label="Slide précédent">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-          </svg>
-        </button>
-        <div class="hero__nav-progress">
-          <span class="hero__nav-current">01</span>
-          <div class="hero__nav-bar">
-            <div class="hero__nav-bar-fill" id="hero-progress"></div>
-          </div>
-          <span class="hero__nav-total">04</span>
-        </div>
-        <button class="hero__nav-btn hero__nav-btn--next" aria-label="Slide suivant">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </button>
+      <div class="hero-split__image">
+        <img src="assets/slides/slide-verre.jpg" alt="Recyclage Gurdebeke">
+        <div class="hero-split__image-accent"></div>
       </div>
     </div>
   </section>
 
   <!-- ========== SERVICES BAR ========== -->
-  <section class="services-bar">
+  <section class="services-bar services-bar--v2">
     <div class="container container--wide">
       <div class="services-bar__grid">
         <a href="#" class="service-card service-card--yellow" data-animate="fade-up" data-animate-delay="1">
@@ -1051,11 +997,11 @@
     </button>
     <div class="variant-selector__menu">
       <span class="variant-selector__label">Variantes</span>
-      <a href="index.html" class="variant-selector__item is-active">
+      <a href="index.html" class="variant-selector__item">
         <span class="variant-selector__dot"></span>
         V1 - Classique
       </a>
-      <a href="index-v2.html" class="variant-selector__item">
+      <a href="index-v2.html" class="variant-selector__item is-active">
         <span class="variant-selector__dot"></span>
         V2 - Split Hero
       </a>
