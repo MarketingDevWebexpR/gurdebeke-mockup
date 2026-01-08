@@ -451,12 +451,11 @@
 /* Custom Navigation */
 .hero__nav {
   position: absolute;
-  bottom: 160px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 100px;
+  left: var(--container-padding);
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
   z-index: 20;
 }
 
@@ -681,9 +680,9 @@
 }
 
 /* -------------------------------------------------------------------------
-   DECONDITIONING SECTION
+   RECYCLING SECTION
    ------------------------------------------------------------------------- */
-.deconditioning__grid {
+.recycling__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-16);
@@ -691,20 +690,25 @@
 }
 
 @media (max-width: 991px) {
-  .deconditioning__grid {
+  .recycling__grid {
     grid-template-columns: 1fr;
     gap: var(--space-10);
   }
 }
 
-.deconditioning__image {
+.recycling__image {
   position: relative;
-  border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
 }
 
-.deconditioning__image::after {
+.recycling__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.recycling__image::after {
   content: '';
   position: absolute;
   top: 0;
